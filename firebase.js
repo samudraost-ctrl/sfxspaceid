@@ -10,24 +10,33 @@ getAuth
 
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
+import {
+
+getFirestore
+
+}
+
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
 const firebaseConfig = {
 
-apiKey: "YOUR_FIREBASE_APIKEY",
+apiKey:
+"AIzaSyACnjP2U-PSsmtRGcQrfueeByZOlzamWtc",
 
 authDomain:
-"YOUR_PROJECT.firebaseapp.com",
+"sfx-heatmap.firebaseapp.com",
 
 projectId:
-"YOUR_PROJECT",
+"sfx-heatmap",
 
 storageBucket:
-"YOUR_PROJECT.appspot.com",
+"sfx-heatmap.firebasestorage.app",
 
 messagingSenderId:
-"123456789",
+"668414418580",
 
 appId:
-"YOUR_APP_ID"
+"1:668414418580:web:7be0f2dba925b8be149e81"
 
 };
 
@@ -36,3 +45,6 @@ initializeApp(firebaseConfig);
 
 export const auth =
 getAuth(app);
+
+export const db =
+getFirestore(app);
